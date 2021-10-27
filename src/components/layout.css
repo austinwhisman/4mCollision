@@ -590,6 +590,24 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.main-bg {
+  content: "";
+  display: block;
+  background-attachment: fixed;
+  z-index: -1;
+   background: url(../images/car-top-view2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

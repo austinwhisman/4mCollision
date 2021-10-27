@@ -1,0 +1,38 @@
+/* ./src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body 
+{
+    background-color:black;
+}
+
+@media (pointer: coarse) {
+    .main-bg {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 640px) 
+{
+
+
+}
+
+@media (min-width: 768px) 
+{ 
+}
+
+@media (min-width: 1024px)
+{
+}
+
+@media (min-width: 1280px) 
+{ 
+}
+
+@media (min-width: 1536px) 
+{
+}
