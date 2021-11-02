@@ -41,9 +41,10 @@ const Navigation = ({navBackground}) => {
           flex flex-wrap 
           bg-black bg-opacity-90
           text-center place-content-center
-          z-20 
+          z-0
           transition-transform duration-500 ease-in-out transform
           overflow-y-scroll
+          md:overflow-y-visible
           ${
             open 
             ? "translate-x-0: md:opacity-100"
@@ -62,17 +63,14 @@ const Navigation = ({navBackground}) => {
           flex flex-wrap 
           bg-black bg-opacity-95
           text-center place-content-center
-          justify-center
-          z-20
+          z-0
           md:fixed
-          md:bg-transparent
-          md:text-white
           md:transition-transform duration-500 
           md:ease-in-out 
           md:transform translate-x-0
           `
         }>
-          <div className=" md:h-auto md:flex text-left sm: ext right-0 md:w-3/4 xl:w-2/5 text-5xl text-yellow-400 md:text-yellow-200 md:text-lg">
+          <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 xl:w-2/5 text-5xl text-yellow-400 md:text-yellow-200 md:text-lg">
             <div className="w-full ">
               <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">About</p>
             </div>
@@ -110,7 +108,7 @@ const Navigation = ({navBackground}) => {
             ? 
               ` open text-yellow-400
                 top-6 right-4  
-                fixed z-30
+                fixed z-50
                 md:hidden
                 hover:text-red-500`
             :
@@ -119,10 +117,12 @@ const Navigation = ({navBackground}) => {
                 fixed z-30
                 md:hidden
                 hover:text-red-500`
-        }>
-        <div>
-          <MenuIcon className="h-8 w-8"></MenuIcon>
-        </div>
+          }
+          style={{zIndex: '1000'}}
+        >
+          <div>
+            <MenuIcon className="h-8 w-8"></MenuIcon>
+          </div>
         </button>
       </div>
   );
