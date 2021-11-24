@@ -43,9 +43,6 @@ const IndexPage = () => (
           <div className="w-full bg-red-900 bg-opacity-80 min-h-19 md:h-auto">
             <img alt="BASF Chemistry Logo" className="w-2/3 h-2/3 max-h-96 mt-8 object-cover mx-auto text-white" src={basflogo}></img>
             <div className="mx-auto w-max">
-              <button className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:bg-white hover:text-yellow-300">
-                Learn More
-              </button>
             </div>
           </div>
           <div className="w-full bg-yellow-300 bg-opacity-80 min-h-19 md:h-auto">
