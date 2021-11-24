@@ -91,7 +91,7 @@ const Footer = () => {
                             <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
                                 Estimates
                             </li>
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
+                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base lg:pt-4 
                             ">
                                 When To Call
                             </li>
