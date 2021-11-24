@@ -43,7 +43,7 @@ const IndexPage = () => (
           <div className="w-full bg-red-900 bg-opacity-80 min-h-19 md:h-auto">
             <img alt="BASF Chemistry Logo" className="w-2/3 h-2/3 max-h-96 mt-8 object-cover mx-auto text-white" src={basflogo}></img>
             <div className="mx-auto w-max">
-              <button className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-black hover:text-yellow-300">
+              <button className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:bg-white hover:text-yellow-300">
                 Learn More
               </button>
             </div>
@@ -51,16 +51,18 @@ const IndexPage = () => (
           <div className="w-full bg-yellow-300 bg-opacity-80 min-h-19 md:h-auto">
             <img alt ="Du Pont Assurance Of Quality" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={dupontlogo}></img>
             <div className="mx-auto w-max">
-              <button  className="hvr-sweep-to-right bg-gray-800 font-bold py-2 px-4 rounded text-white hover:bg-white hover:text-gray-800">
-                Learn More
-              </button>
+              <Link to="/dupont">
+                <button  className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:bg-white hover:text-yellow-300 ">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-full bg-opacity-80 min-h-19 md:h-auto" style={{backgroundColor: '#272626' }}>
             <img alt ="Gold Class I-CAR logo" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={goldclasslogo}></img>
             <div className="mx-auto w-max">
-              <Link to="page-2">
-                <button className="hvr-sweep-to-right font-bold py-2 px-4 rounded bg-red-900 text-white hover:text-red-900 hover:bg-white">
+              <Link to="/goldclass">
+                <button className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:text-yellow-300 hover:bg-white">
                   Learn More
                 </button>
               </Link>

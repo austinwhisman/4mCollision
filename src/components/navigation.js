@@ -71,11 +71,10 @@ const Navigation = ({navBackground}) => {
           `
         }>
           <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 xl:w-2/5 text-5xl text-yellow-400 md:text-yellow-200 md:text-lg">
-            <div className="w-full ">
-              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">About</p>
-            </div>
             <div className="w-full">
-              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Contact</p>
+              <Link to="/contact">
+                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Contact</p>
+              </Link>
             </div>
             <div className="w-full">
               <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Estimates</p>
@@ -93,11 +92,16 @@ const Navigation = ({navBackground}) => {
                   <p className="table md:mb-0 ">BASF</p>
                 </div>
                 <div className="w-full pl-2 md:hover:bg-yellow-500 hover:text-red-500 md:hover:text-white md:text-gray-900 cursor-pointer">
-                  <p className="table md:mb-0 ">GOLD CLASS</p>
+                  <Link to="/dupont">
+                    <p className="table md:mb-0 ">ASSURANCE OF QUALITY</p>
+                  </Link>
                 </div>
                 <div className="w-full pl-2 md:hover:bg-yellow-500 hover:text-red-500 md:hover:text-white md:text-gray-900 cursor-pointer">
-                  <p className="table md:mb-0 ">ASSURANCE OF QUALITY</p>
+                  <Link to="/goldclass">
+                    <p className="table md:mb-0 ">GOLD CLASS</p>
+                  </Link>
                 </div>
+                
               </div>
             </div>
           </div>

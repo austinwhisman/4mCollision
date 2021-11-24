@@ -4,9 +4,9 @@ import goldClass from "../images/goldclass.png"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const SecondPage = () => (
+const GoldClassPage = () => (
   <Layout>
-    <Seo title="Page two" />
+    <Seo title="Gold Class" />
     <h1 className="text-yellow-300">Excellence through Training</h1>
     <div className="grid grid-cols-1 order-last sm:order-first lg:grid-cols-2 font-sans">
       <div className ="w-3/4 relative left-16 py-16">
@@ -38,4 +38,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default GoldClassPage

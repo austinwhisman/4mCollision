@@ -83,13 +83,12 @@ const Footer = () => {
                         <h3 className="text-left ml-4 text-yellow-300">EXPLORE</h3>
                         <span className="w-full border-t-4 border-white block"></span>
                         <ul className=" pt-8 text-center font-sans font-medium mx-4 grid grid-cols-3 lg:grid-cols-2">
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
-                                About
-                            </li>
+                        <Link to="/contact">
                             <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
                                 Contact
                             </li>
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base md:pt-4">
+                        </Link>
+                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
                                 Estimates
                             </li>
                             <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
@@ -100,13 +99,13 @@ const Footer = () => {
                             ">
                                 BASF
                             </li>
-                            <Link to="/page-2">
+                            <Link to="/goldclass">
                                 <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
                                 ">
                                     Gold Class
                                 </li>
                             </Link>
-                            <Link to="/page-3">
+                            <Link to="/dupont">
                                 <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
                                 ">
                                     Assurance Of Quality

@@ -9,7 +9,7 @@ const DupontPage = () => (
   <Layout>
     <Seo title="DuPont Assurance of Quality" />
     <h1 className="text-yellow-300 relative pl-4 pt-20">Excellence through Training</h1>
-    <div className="grid grid-cols-1 order-last sm:order-first lg:grid-cols-2 font-sans pb-16">
+    <div className="grid grid-cols-1 order-last sm:order-first lg:grid-cols-2 font-sans md:pb-16">
         <div className ="w-full mx-auto md:w-3/4 relative">
             <div className="relative px-8 pt-8 py-16">
                 <p className ="text-white w-full xl:w-3/4">
@@ -23,8 +23,8 @@ const DupontPage = () => (
                     We believe DuPont provides our customers a superior value.
                 </p>
             </div>
-            <div className="relative px-8 md:pl-8 md:pb-16">
-                <h3 className="text-yellow-300 text-xl md:text-2xl ">
+            <div className=" bg-black bg-opacity-70 relative px-8 md:pl-8 pt-12">
+                <h3 className="text-yellow-300 text-xl md:text-2xl border-b border-yellow-300">
                     With DuPont You can look forward to    
                 </h3>
                 <ul className ="relative text-white pl-4 pb-8 md:pb-16 text-left">
@@ -151,8 +151,8 @@ const DupontPage = () => (
                 <h1 className="text-gray-900 relative pl-4 pb-16"> 
                     Definitions
                 </h1>
-                <ul className="text-white w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                    <div className="w-full mx-auto bg-gray-900 pt-8 md:py-8 px-8 mb-8 md:my-8 md:col-span-2 xl:col-span-1">
+                <ul className="text-white w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2">
+                    <div className="w-full md:w-11/12 mx-auto bg-gray-900 pt-8 md:py-8 px-8  md:my-8 md:col-span-2 xl:col-span-1 lg:pt-16">
                         <h3 className="text-yellow-300 left-4 ">
                             Assurance of Quality Certificate
                         </h3>
@@ -169,21 +169,23 @@ const DupontPage = () => (
                             </p>
                         </li>
                     </div>
-                    <div className="w-full md:w-11/12 mx-auto bg-gray-900 py-8 px-8 my-8">
-                        <h3 className="text-yellow-300">
-                            DuPont Basecoat/Clearcoat Paint System
-                        </h3>
-                        <li className="mb-16 ml-4">
-                            DuPont Basecoat/Clearcoat Paint System shall mean ChromaBase, or ChromaPremier BaseCoat.
-                        </li>
-                    </div>
-                    <div className="w-full mx-auto bg-gray-900 py-8 px-8 my-8">
-                        <h3 className="text-yellow-300">
-                            DuPont Single Stage Paint System
-                        </h3>
-                        <li className="mb-8 ml-4">
-                            DuPont Single Stage Paint System shall mean ChromaOne Single Stage, or ChromaPremier Single Stage.
-                        </li>
+                    <div className="md:col-span-2 xl:col-span-1">
+                        <div className="w-full md:w-11/12 mx-auto bg-gray-900 py-8 px-8 my-8 lg:pt-16">
+                            <h3 className="text-yellow-300">
+                                DuPont Basecoat/Clearcoat Paint System
+                            </h3>
+                            <li className="mb-8 ml-4">
+                                DuPont Basecoat/Clearcoat Paint System shall mean ChromaBase, or ChromaPremier BaseCoat.
+                            </li>
+                        </div>
+                        <div className="w-full md:w-11/12 mx-auto bg-gray-900 py-8 px-8 my-8 lg:pt-16">
+                            <h3 className="text-yellow-300">
+                                DuPont Single Stage Paint System
+                            </h3>
+                            <li className="mb-8 ml-4">
+                                DuPont Single Stage Paint System shall mean ChromaOne Single Stage, or ChromaPremier Single Stage.
+                            </li>
+                        </div>
                     </div>
                 </ul>
             </div>
