@@ -83,22 +83,22 @@ const Footer = () => {
                         <h3 className="text-left ml-4 text-yellow-300">EXPLORE</h3>
                         <span className="w-full border-t-4 border-white block"></span>
                         <ul className=" pt-8 text-center font-sans font-medium mx-4 grid grid-cols-3 lg:grid-cols-2">
-                        <Link to="/contact">
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
-                                Contact
-                            </li>
-                        </Link>
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
-                                Estimates
-                            </li>
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base lg:pt-4 
-                            ">
-                                When To Call
-                            </li>
-                            <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
-                            ">
-                                BASF
-                            </li>
+                            <Link to="/contact">
+                                <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
+                                    Contact
+                                </li>
+                            </Link>
+                            <Link to="/faq">
+                                <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base">
+                                    FAQ
+                                </li>
+                            </Link>
+                            <Link to="/information">
+                                <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base lg:pt-4 
+                                ">
+                                    Information
+                                </li>
+                            </Link>
                             <Link to="/goldclass">
                                 <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
                                 ">

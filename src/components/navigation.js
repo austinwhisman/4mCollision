@@ -77,32 +77,20 @@ const Navigation = ({navBackground}) => {
               </Link>
             </div>
             <div className="w-full">
-              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Estimates</p>
+              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">FAQ</p>
             </div>
             <div className="w-full">
-              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">When To Call</p>
+              <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Information</p>
             </div>
-            <div className ="mt-4 relative inline-block group w-full h-auto">
-              <p className ="mb-0 text-2xl">Certified</p>
-              <svg className="hidden" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-              <div className="md:hidden absolute min-w-min group-hover:block md:bg-yellow-300 py-4 -right-0 top-6 w-full mt-6 md:mt-0 md:w-52 text-xs">
-                <div className="w-full pl-2 md:hover:bg-yellow-500 hover:text-red-500 md:hover:text-white md:text-gray-900 cursor-pointer">
-                  <p className="table md:mb-0 ">BASF</p>
-                </div>
-                <div className="w-full pl-2 md:hover:bg-yellow-500 hover:text-red-500 md:hover:text-white md:text-gray-900 cursor-pointer">
-                  <Link to="/dupont">
-                    <p className="table md:mb-0 ">ASSURANCE OF QUALITY</p>
-                  </Link>
-                </div>
-                <div className="w-full pl-2 md:hover:bg-yellow-500 hover:text-red-500 md:hover:text-white md:text-gray-900 cursor-pointer">
-                  <Link to="/goldclass">
-                    <p className="table md:mb-0 ">GOLD CLASS</p>
-                  </Link>
-                </div>
-                
-              </div>
+            <div className="w-full">
+              <Link to="/dupont">
+                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Assurance Of Quality</p>
+              </Link>
+            </div>
+            <div className="w-full">
+              <Link to="/goldclass">
+                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Gold Class</p>
+              </Link>
             </div>
           </div>
         </div>
