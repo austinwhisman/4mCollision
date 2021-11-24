@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   const [ containerRef, isVisible ] = useElementOnScreen({
       root: null,
       rootMargin: "0px",
-      threshold: .2
+      threshold: .1
   })
   const [loading, setLoading] = useState(true)
 
