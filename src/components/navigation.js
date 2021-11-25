@@ -70,18 +70,19 @@ const Navigation = ({navBackground}) => {
           md:transform translate-x-0
           `
         }>
-          <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 xl:w-2/5 text-5xl text-yellow-400 md:text-yellow-200 md:text-lg">
-            <div className="w-full">
+          <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 
+           text-5xl text-yellow-400 md:text-yellow-200 sm:text-sm md:text-lg">
+            <div className="w-3/4">
               <Link to="/contact">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Contact</p>
               </Link>
             </div>
-            <div className="w-full">
+            <div className="w-1/2">
               <Link to="/faq">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">FAQ</p>
               </Link>
             </div>
-            <div className="w-full">
+            <div className="w-3/4">
               <Link to="/information">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Information</p>
               </Link>
