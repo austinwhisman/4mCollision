@@ -114,8 +114,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="w-4/5 mx-auto">
-                    <h3 className="text-left ml-4 text-yellow-300">SOCIAL</h3>
-                    <span className="w-full border-t-4 border-white block"></span> 
+                        <h3 className="text-left ml-4 text-yellow-300">SOCIAL</h3>
+                        <span className="w-full border-t-4 border-white block"></span> 
                         <div className="place-content-center pt-8 grid grid-cols-1 font-sans font-medium pb-8 mx-4">
                             <div className="w-1/2 grid grid-cols-2">
                                 <div className ="h-12 mx-auto rounded-md hvr-sweep-to-right">
@@ -137,6 +137,16 @@ const Footer = () => {
                                 </button> 
                             </div>  
                         </div>
+                        <div className="col-span-3 mx-auto pt-12">
+                            <h3 className="text-left ml-4 text-yellow-300">ADDRESS</h3>
+                            <span className="w-full border-t-4 border-white block"></span> 
+                            <div className="text-yellow-300">
+                                <p>1663 N. Lapeer Rd. Oxford, MI </p>
+                            </div>
+                            <iframe width="100%" height="450" style={{border:'0'}} loading="lazy" 
+                                allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBVByHhCNJIgRqu3cwdMN8N0&key=AIzaSyDtKbbK4mGjmgCE-DTqJYCKuSM8wV6vYFM">
+                            </iframe>
+                        </div>  
                     </div>
                 </div>
             </div>
