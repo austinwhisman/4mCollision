@@ -26,7 +26,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  const isBrowser = typeof window !== "undefined";
+  if(isBrowser)
+  {
+    var path = window.location.pathname;
+  }
   const [ containerRef, isVisible ] = useElementOnScreen({
       root: null,
       rootMargin: "0px",
@@ -38,8 +42,9 @@ const Layout = ({ children }) => {
     setTimeout(() => setLoading(false), 100)
   }, [])
   return (
-    <div className={ (window.location.pathname === '/') ? "sm:bg-fixed bg-contain bg-center sm:bg-right bg-black bg-no-repeat" : "bg-none"}
-    style={ (window.location.pathname === '/') ? { backgroundImage: `url(${carPhoto})`} : {} }
+    
+    <div className={ (path === '/') ? "sm:bg-fixed bg-contain bg-center sm:bg-right bg-black bg-no-repeat" : "bg-none"}
+    style={ (path === '/') ? { backgroundImage: `url(${carPhoto})`} : {} }
     >
     { loading === false ? 
       (
