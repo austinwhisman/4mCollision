@@ -15,8 +15,8 @@ const IndexPage = () => (
     <Seo title="Home" />
     <h1 className= "text-yellow-300 pl-6" >Our Goal</h1>
     <div className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-auto mb-0">
-        <div className=" w-full col-span-2 sm:max-h-96 md:col-span-1 pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-auto sm:mb-36 xl:mb-20">
+        <div className=" w-full col-span-2 sm:max-h-96 md:col-span-1 pb-6 ">
           <div className="relative xl:w-5/6 xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-x-2/3 xl:-translate-y-2/3 xl:m-auto">
             <p className="text-white font-sans font-light text-lg md:text-base md:font-medium lg:text-xl lg:font-light pt-6 md:pt-8 pb-8 md:pb-0 lg:py-10 px-10 mb-0">
               The 4M Collision goal is to provide you with the best service
@@ -25,35 +25,52 @@ const IndexPage = () => (
               at 4M Collision.
             </p>
             <p className="text-white font-sans font-light text-lg md:text-base md:font-medium lg:text-xl lg:font-light my-8 px-10 mb-12 lg:my-0">
-              4m collision offers everything from collision, 
+              4M Collision offers everything from collision, 
               restorations to custom paint. also providing free rental cars on all 
               major repairs. we also work with all major insurance companies along 
               with special pricing on all customer out of pocket repairs. 
             </p>
           </div>
         </div>
-        
-        <div className="w-full object-contain col-span-2 grid md:grid-cols-4 font-sans text-center">
-            <div>
+        <div className="bg-white md:bg-transparent w-full col-span-2 sm:max-h-96 md:col-span-1 pb-6">
+            
+        </div>
+      </div>
+        <div className="w-full  object-contain grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 font-sans text-center">
+            <div className="col-span-1 sm:col-span-2 md:col-span-4">
+              <div className ="bg-white md:bg-gray-800 pt-6 md:bg-opacity-80 pb-8">
+                <h1 className="md:text-yellow-300" >Why us?</h1>
+                <div className="relative m-auto max-w-5xl text-left font-semibold">
+                  <p className="md:text-white font-sans text-lg md:text-base md:font-medium lg:text-xl lg:font-light pt-6 md:pt-8 pb-8 md:pb-0 lg:py-10 px-10 mb-0">
+                    Your car is the second largest investment you're likely to make. 
+                    Preserve its value and your safety by having it repaired professionally.
+                    Our team uses top of the line unibody repair equipment, and has the experience and certifications to do the repair right.
+                  </p>
+                  <p className="md:text-white font-sans text-lg md:text-base md:font-medium lg:text-xl lg:font-light mt-8 px-10 mb-0 md:mb-12 lg:my-0">
+                    Always remember your rights. Your insurance company cannot require you to go to a particular shop, and cannot force you to have your car appraised multiple times.
+                    We would love to have your business, and we will help you negotiate your claim with the insurance company. 4M Collision accept all insurance claims. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className ="bg-gray-800 pt-6 bg-opacity-80">
               <h2 className="text-yellow-300">Quality</h2>
               <p className="text-white w-3/4 mx-auto">Repairs done right, with the best sourced parts.</p>
             </div>
-            <div>
+            <div className ="bg-gray-800 pt-6 bg-opacity-80">
               <h2 className="text-yellow-300">Integrity</h2>
               <p className="text-white w-3/4 mx-auto">We stand by our work and will help guide you through this process.</p>
             </div>
-            <div>
+            <div className ="bg-gray-800 pt-6 bg-opacity-80">
               <h2 className="text-yellow-300">Expertise</h2>
               <p className="text-white w-3/4 mx-auto">We have been a community trusted name for over 25 years</p>
             </div>
-            <div>
+            <div className ="bg-gray-800 pt-6 bg-opacity-80">
               <h2 className="text-yellow-300">Certified</h2>
-              <p className="text-white w-3/4 mx-auto">At 4mCollision we don't just talk about doing good work. We have the credentials</p>
+              <p className="text-white w-3/4 mx-auto">At 4M Collision we don't just talk about doing good work. We have the credentials</p>
             </div>
         </div>
-
         <div className="w-full object-contain col-span-2 grid md:grid-cols-4 font-sans bg-white">
-          
           <div className="w-full  min-h-19 md:h-auto">
           <img alt ="Kia Recognized Collision Repair Center" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={kiaLogo}></img>
             <div className="mx-auto w-max">
@@ -90,7 +107,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
     
   </Layout>

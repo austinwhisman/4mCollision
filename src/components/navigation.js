@@ -83,8 +83,8 @@ const Navigation = ({navBackground}) => {
               </Link>
             </div>
             <div className="w-3/4">
-              <Link to="/information">
-                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Information</p>
+              <Link to="/services">
+                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Services</p>
               </Link>
             </div>
             <div className="w-full">

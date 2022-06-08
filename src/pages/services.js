@@ -7,12 +7,13 @@ import bodyRepairImage from "../images/body-repair.jpg"
 import bumperRepairImage from "../images/bumper-repair.jpg"
 import hailRepairImage from "../images/Hail-Damage-Repair.png"
 import paintRepairImage from "../images/paint-repair.jpg"
+import dentRepairImage from "../images/paintless-dent.jpg"
 
 const ServicesPage = () => (
   <Layout>
     <Seo title="Provided Collison Repair Services" />
     <div>
-        <div className="w-11/12 max-w-7xl mx-auto text-white">
+        <div className="w-11/12 max-w-7xl mx-auto text-white font-sans">
             <div className="mb-14">
                 <h1 className="text-yellow-300 text-center">REPAIR SERVICES</h1>
             </div>
@@ -53,13 +54,24 @@ const ServicesPage = () => (
                     </p>
                 </div>     
                 <div>
-                    <img className="sm:h-80 sm:w-80 object-cover" src={autoRepairImage}></img>
+                    <img className="sm:h-80 sm:w-80 object-cover" src={dentRepairImage}></img>
                     <h3 className="text-yellow-300">Paintless Dent Repair</h3>
                     <p>
                         Paintless dent removal is the fastest, most effective, and cost-effective method of removing minor dents and creases from your vehicle.
                     </p>
-                </div>     
+                </div>
+                <div className="col-span-1 sm:col-span-2 sm:h-4/6 p-10 bg-white text-black  mx-auto border-yellow-300" style={{border: `20px solid rgb(252, 211, 77)`}}>
+                <p>If you're uncertain that we provide a service you're looking for, please reach out to us. 
+                   More likely than not we will be able help you out.
+                </p>
+                <button className=" bg-yellow-300 before:bg-gray-800 hvr-sweep-to-right w-auto font-bold mx-auto px-4 font-sans rounded text-black hover:text-yellow-300 py-6">
+                    <a href="tel:2485724844">
+                        Click To Call: 248-572-4844
+                    </a>
+                </button> 
+            </div>     
             </div>
+            
         </div> 
     </div>
     
