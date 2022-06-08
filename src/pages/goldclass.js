@@ -7,9 +7,10 @@ import Seo from "../components/seo"
 const GoldClassPage = () => (
   <Layout>
     <Seo title="Gold Class" />
-    <h1 className="text-yellow-300">Excellence through Training</h1>
+    
     <div className="grid grid-cols-1 order-last sm:order-first lg:grid-cols-2 font-sans">
-      <div className ="w-3/4 relative left-16 py-16">
+      <div className ="w-3/4 relative left-16 pt-16 pb-8">
+      <h1 className="text-yellow-300">Excellence through Training</h1>
         <p className ="text-white">
           I-Car provides training and certification standards for the collision repair 
           industry.  Working closely with the OEM sector, I-Car develops classes to teach 
@@ -30,11 +31,10 @@ const GoldClassPage = () => (
           Our highly trained staff is here to serve you.
         </p>
       </div>
-      <div classNames="relative order-first sm:order-last">
+      <div classNames="relative order-first sm:order-last pb-8">
         <img className=" w-1/2 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={goldClass}></img>
       </div>
     </div>
-    <Link className="text-yellow-300" to="/">Back To Homepage</Link>
   </Layout>
 )
 

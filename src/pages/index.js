@@ -6,6 +6,7 @@ import basflogo from "../images/basflogo.svg"
 import dupontlogo from "../images/dupont-assurance.svg"
 import goldclasslogo from "../images/goldclass.png"
 import carPhoto from "../images/car-top-view2.jpg"
+import kiaLogo from "../images/kia-certified.png"
 import { Link } from "gatsby"
 
 const IndexPage = () => (
@@ -14,7 +15,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <h1 className= "text-yellow-300 pl-6" >Our Goal</h1>
     <div className="w-full">
-      <div className="grid md:grid-cols-2 my-auto mb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-auto mb-0">
         <div className=" w-full col-span-2 sm:max-h-96 md:col-span-1 pb-6">
           <div className="relative xl:w-5/6 xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-x-2/3 xl:-translate-y-2/3 xl:m-auto">
             <p className="text-white font-sans font-light text-lg md:text-base md:font-medium lg:text-xl lg:font-light pt-6 md:pt-8 pb-8 md:pb-0 lg:py-10 px-10 mb-0">
@@ -31,21 +32,44 @@ const IndexPage = () => (
             </p>
           </div>
         </div>
-        <div className="w-full col-span-2 md:col-span-1 max-h-96 hidden">
-          <img alt ="" className="mb-0 w-full h-full object-cover" src={tools}></img>
+        
+        <div className="w-full object-contain col-span-2 grid md:grid-cols-4 font-sans text-center">
+            <div>
+              <h2 className="text-yellow-300">Quality</h2>
+              <p className="text-white w-3/4 mx-auto">Repairs done right, with the best sourced parts.</p>
+            </div>
+            <div>
+              <h2 className="text-yellow-300">Integrity</h2>
+              <p className="text-white w-3/4 mx-auto">We stand by our work and will help guide you through this process.</p>
+            </div>
+            <div>
+              <h2 className="text-yellow-300">Expertise</h2>
+              <p className="text-white w-3/4 mx-auto">We have been a community trusted name for over 25 years</p>
+            </div>
+            <div>
+              <h2 className="text-yellow-300">Certified</h2>
+              <p className="text-white w-3/4 mx-auto">At 4mCollision we don't just talk about doing good work. We have the credentials</p>
+            </div>
         </div>
-        <div className="w-full col-span-2 text-left pl-6 text-yellow-300">
-          <h1>
-            Certified
-          </h1>
-        </div>
-        <div className="w-full object-contain col-span-2 grid md:grid-cols-3 font-sans">
-          <div className="w-full bg-red-900 bg-opacity-80 min-h-19 md:h-auto">
+
+        <div className="w-full object-contain col-span-2 grid md:grid-cols-4 font-sans bg-white">
+          
+          <div className="w-full  min-h-19 md:h-auto">
+          <img alt ="Kia Recognized Collision Repair Center" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={kiaLogo}></img>
+            <div className="mx-auto w-max">
+            <Link to="/dupont">
+                <button  className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:bg-white hover:text-yellow-300 ">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="w-fullmin-h-19 md:h-auto">
             <img alt="BASF Chemistry Logo" className="w-2/3 h-2/3 max-h-96 mt-8 object-cover mx-auto text-white" src={basflogo}></img>
             <div className="mx-auto w-max">
             </div>
           </div>
-          <div className="w-full bg-yellow-300 bg-opacity-80 min-h-19 md:h-auto">
+          <div className="w-full min-h-19 md:h-auto">
             <img alt ="Du Pont Assurance Of Quality" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={dupontlogo}></img>
             <div className="mx-auto w-max">
               <Link to="/dupont">
@@ -55,7 +79,7 @@ const IndexPage = () => (
               </Link>
             </div>
           </div>
-          <div className="w-full bg-opacity-80 min-h-19 md:h-auto" style={{backgroundColor: '#272626' }}>
+          <div className="w-full min-h-19 md:h-auto">
             <img alt ="Gold Class I-CAR logo" className="w-2/3 h-2/3 max-h-96 mt-8 object-scale-down mx-auto" src={goldclasslogo}></img>
             <div className="mx-auto w-max">
               <Link to="/goldclass">

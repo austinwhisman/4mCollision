@@ -14,7 +14,7 @@
   padding: 18px;
   display: flex;
   align-items: center;
-  border: none;
+  border: 1px solid black;
   outline: none;
   transition: background-color 0.6s ease;
 }
@@ -63,6 +63,6 @@
   margin: auto;
 }
 
-.accordion__text h3 {
+.accordion__text h3,  .accordion__text h4{
     color: #fcd34d;
 }

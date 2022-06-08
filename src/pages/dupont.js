@@ -8,10 +8,11 @@ import Seo from "../components/seo"
 const DupontPage = () => (
   <Layout>
     <Seo title="DuPont Assurance of Quality" />
-    <h1 className="text-yellow-300 relative pl-4 pt-20">Excellence through Training</h1>
+    
     <div className="grid grid-cols-1 order-last sm:order-first lg:grid-cols-2 font-sans md:pb-16">
         <div className ="w-full mx-auto md:w-3/4 relative">
             <div className="relative px-8 pt-8 py-16">
+            <h1 className="text-yellow-300 relative lg:pt-20">Excellence through Training</h1>
                 <p className ="text-white w-full xl:w-3/4">
                     Assurance of Quality (AOQ) is a unique program. 
                     DuPont provides the AOQ affiliation to only an elite group of collision centers.  
@@ -23,7 +24,7 @@ const DupontPage = () => (
                     We believe DuPont provides our customers a superior value.
                 </p>
             </div>
-            <div className=" bg-black bg-opacity-70 relative px-8 md:pl-8 pt-12">
+            <div className="relative px-8 md:pl-8 pt-12">
                 <h3 className="text-yellow-300 text-xl md:text-2xl border-b border-yellow-300">
                     With DuPont You can look forward to    
                 </h3>
@@ -148,7 +149,7 @@ const DupontPage = () => (
         </div>
         <div className="font-sans pt-16 bg-yellow-300"> 
             <div className="">
-                <h1 className="text-gray-900 relative pl-4 pb-16"> 
+                <h1 className="text-gray-900 relative pl-4"> 
                     Definitions
                 </h1>
                 <ul className="text-white w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2">

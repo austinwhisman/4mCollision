@@ -38,8 +38,8 @@ const Layout = ({ children }) => {
     setTimeout(() => setLoading(false), 100)
   }, [])
   return (
-    <div className= "sm:bg-fixed bg-contain bg-center sm:bg-right bg-black bg-no-repeat"
-    style={{backgroundImage: `url(${carPhoto})`}}
+    <div className={ (window.location.pathname === '/') ? "sm:bg-fixed bg-contain bg-center sm:bg-right bg-black bg-no-repeat" : "bg-none"}
+    style={ (window.location.pathname === '/') ? { backgroundImage: `url(${carPhoto})`} : {} }
     >
     { loading === false ? 
       (

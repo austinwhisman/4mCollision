@@ -17,7 +17,7 @@ function Accordion(props) {
   return (
     <div className="accordion__section">
       <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-        <p className="accordion__title">{props.title}</p>
+        <p className="accordion__title"><span className="text-red-800 font-bold text-lg">Q: </span>{props.title}</p>
       </button>
       <div
         ref={content}

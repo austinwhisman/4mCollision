@@ -111,6 +111,12 @@ const Footer = () => {
                                     Assurance Of Quality
                                 </li>
                             </Link>
+                            <Link to="/services">
+                                <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base pt-4 
+                                ">
+                                    Services
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                     <div className="w-4/5 mx-auto">
