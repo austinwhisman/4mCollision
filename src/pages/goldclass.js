@@ -31,7 +31,7 @@ const GoldClassPage = () => (
           Our highly trained staff is here to serve you.
         </p>
       </div>
-      <div classNames="relative order-first sm:order-last pb-8">
+      <div className="relative order-first sm:order-last pb-8">
         <img className=" w-1/2 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={goldClass}></img>
       </div>
     </div>

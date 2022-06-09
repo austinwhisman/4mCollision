@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logoSvg from '../images/4mlogo.svg'
 import { MenuIcon } from '@heroicons/react/outline'
-import { useElementOnScreen } from './scrolleffecthandler'
 import { Link } from "gatsby"
 
 const Navigation = ({navBackground}) => {
