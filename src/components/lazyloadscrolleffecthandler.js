@@ -1,7 +1,12 @@
 import React, { useRef, useEffect, useState } from "react"
 
 export const lazyLoadImage = (options) => {
-    const images = document.querySelectorAll('.lazyload');
+    const isBrowser = typeof window !== "undefined"
+
+    if(isBrowser)
+    {
+        var images = document.querySelectorAll('.lazyload');
+    }
 
     const callbackFunction = (entries) => {
        entries.map((entry) => {
@@ -13,9 +18,13 @@ export const lazyLoadImage = (options) => {
         }
     });
     }
-  
+
     const observer = new IntersectionObserver(callbackFunction, options)
-    images.forEach(image => observer.observe(image));
+    if(isBrowser)
+    {
+        images.forEach(image => observer.observe(image));
+    }
+
 }
 
   
