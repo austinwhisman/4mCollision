@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
   return (
     
     <div className={ (path === '/') ? "sm:bg-fixed bg-contain bg-center sm:bg-right bg-black bg-no-repeat" : "bg-none"}
-    style={ (path === '/') ? { backgroundImage: `url(${carPhoto})`} : {} }
+    
     >
     { loading === false ? 
       (
