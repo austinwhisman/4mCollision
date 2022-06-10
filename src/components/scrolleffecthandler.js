@@ -4,6 +4,7 @@ export const useElementOnScreen = (options) => {
     const containerRef = useRef(null)
     const [ isVisible, setIsVisible ] = useState(false)
     const [hasBeenSet, setHasBeenSet ] = useState(false);
+    
     const callbackFunction = (entries) => {
       const [ entry ] = entries
       setIsVisible(entry.isIntersecting)

@@ -14,7 +14,7 @@ import Footer from "./footer"
 import LoadingScreen from "./loadingscreen"
 import "./layout.css"
 import { useElementOnScreen } from './scrolleffecthandler'
-import { lazyLoadImage } from '../components/lazyloadscrolleffecthandler'
+import { useLazyLoadImage } from './lazyloadscrolleffecthandler'
 import carPhoto from "../images/car-top-view2.jpg"
 
 const Layout = ({ children }) => {
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       threshold: .1
   })
 
-  lazyLoadImage({
+  useLazyLoadImage({
     root: null,
     rootMargin: "0px",
     threshold: .4
