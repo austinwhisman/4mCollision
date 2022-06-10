@@ -5,7 +5,7 @@ import basflogo from "../images/basflogo.svg"
 import dupontlogo from "../images/dupont-assurance.svg"
 import kiaLogo from "../images/kia-certified.png"
 import goldclasslogo from "../images/goldclass.png"
-import redcar from "../images/redcar.png"
+import redcar from "../images/red-car-trim.png"
 import { Link } from "gatsby"
 
 
