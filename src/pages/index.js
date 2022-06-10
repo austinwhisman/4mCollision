@@ -107,7 +107,7 @@ return(
           </div>
         </div>
         <div className="w-fullmin-h-19 md:h-auto">
-          <img  alt="BASF Chemistry Logo" className="lazyload transition-opacity duration-1000 ease-in-out opacity-0 w-2/3 h-2/3 max-h-96 mt-8 object-cover mx-auto text-white" src={basflogo}></img>
+          <img  alt="BASF Chemistry Logo" className="lazyload transition-opacity duration-1000 ease-in-out opacity-0 w-full h-2/3 max-h-96 mt-8 object-cover mx-auto text-white" src={basflogo}></img>
           <div className="mx-auto w-max">
           </div>
         </div>

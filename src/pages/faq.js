@@ -266,7 +266,7 @@ const FaqPage = () => (
                 <div className="col-span-1 sm:col-span-2">
                     <h3 className="text-yellow-300 w-11/12 mx-auto sm:mx-0">Ten Things To Know Before Having Your Car Repaired.</h3>
                 </div>
-                <div className="bg-black w-full">
+                <div className="bg-black w-full lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <div className="grid grid-cols-10 mx-auto w-11/12 ">
                         <h1 className="text-yellow-300 col-span-2 mt-5">1</h1>
                         <p className="col-span-8 mt-5">
@@ -274,13 +274,13 @@ const FaqPage = () => (
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-10 mx-auto w-11/12 ">
+                <div className="grid grid-cols-10 mx-auto w-11/12 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <h1 className="text-yellow-300 col-span-2 mt-5">2</h1>
                     <p className="col-span-8 mt-5">
                         Never drive a car that could be unsafe because of damages.
                     </p>
                 </div>
-                <div className="bg-black w-full">
+                <div className="bg-black w-full lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <div className="grid grid-cols-10 mx-auto w-11/12 ">
                         <h1 className="text-yellow-300 col-span-2 mt-5">3</h1>
                         <p className="col-span-8 mt-5">
@@ -290,7 +290,7 @@ const FaqPage = () => (
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-10 mx-auto w-11/12 ">
+                <div className="grid grid-cols-10 mx-auto w-11/12 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <h1 className="text-yellow-300 col-span-2 mt-5">4</h1>
                     <p className="col-span-8 mt-5">
                         
@@ -300,7 +300,7 @@ const FaqPage = () => (
                         please ask us. 
                     </p>
                 </div>
-                <div className="bg-black w-full">
+                <div className="bg-black w-full lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <div className="grid grid-cols-10 mx-auto w-11/12 ">
                         <h1 className="text-yellow-300 col-span-2 mt-5">5</h1>
                         <p className="col-span-8 mt-5">
@@ -309,14 +309,14 @@ const FaqPage = () => (
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-10 mx-auto w-11/12 ">
+                <div className="grid grid-cols-10 mx-auto w-11/12 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <h1 className="text-yellow-300 col-span-2 mt-5">6</h1>
                     <p className="col-span-8 mt-5">
                         Your car is the second largest investment you're likely to make. 
                         Preserve its value and your safety by having it repaired professionally.
                     </p>
                 </div>
-                <div className="bg-black w-full">
+                <div className="bg-black w-full lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <div className="grid grid-cols-10 mx-auto w-11/12 ">
                         <h1 className="text-yellow-300 col-span-2 mt-5">7</h1>
                         <p className="col-span-8 mt-5">
@@ -324,13 +324,13 @@ const FaqPage = () => (
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-10 mx-auto w-11/12 ">
+                <div className="grid grid-cols-10 mx-auto w-11/12 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <h1 className="text-yellow-300 col-span-2 mt-5">8</h1>
                     <p className="col-span-8 mt-5">
                         Ask if the shop will be using genuine manufacturer (OEM) replacement parts.
                     </p>
                 </div>
-                <div className="bg-black w-full">
+                <div className="bg-black w-full lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <div className="grid grid-cols-10 mx-auto w-11/12 ">
                         <h1 className="text-yellow-300 col-span-2 mt-5">9</h1>
                         <p className="col-span-8 mt-5">
@@ -338,7 +338,7 @@ const FaqPage = () => (
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-10 mx-auto w-11/12 ">
+                <div className="grid grid-cols-10 mx-auto w-11/12 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     <h1 className="text-yellow-300 col-span-2 mt-5">10</h1>
                     <p className="col-span-8 mt-5">
                         4M Collision can help you negotiate your claim with the insurance company.
