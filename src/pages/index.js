@@ -6,6 +6,7 @@ import dupontlogo from "../images/dupont-assurance.svg"
 import kiaLogo from "../images/kia-certified.png"
 import goldclasslogo from "../images/goldclass.png"
 import redcar from "../images/red-car-trim.png"
+import storeview from "../images/storeview.png"
 import { Link } from "gatsby"
 
 
@@ -44,8 +45,11 @@ return(
         </div>
       </div>
       <div className="w-full  object-contain grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 font-sans text-center">
-          <div className="col-span-1 sm:col-span-2 md:col-span-4">
-            <div className ="bg-white md:bg-transparent pt-6 md:bg-opacity-80 pb-8">
+          <div className="w-full sm:w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2  col-span-1 sm:col-span-2 md:col-span-4 sm:mb-20">
+          <div  className="col-span-1">
+              <img className ="my-0 lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={storeview}/>
+            </div>
+            <div className ="bg-white md:bg-transparent pt-6 md:bg-opacity-80 pb-8 col-span-1">
               <h1 className="md:text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0" >
                 Why us?
               </h1>
