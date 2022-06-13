@@ -63,7 +63,7 @@ const KiaPage = () => (
         <div className="col-span-1 lg:col-span-2 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 lg:mb-36">
             <div className="w-full lg:w-3/4 relative lg:pt-16 mx-auto lg:border-8 lg:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                 <div className="relative w-11/12 mx-auto">
-                    <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Let Connect</h1>
+                    <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
                     <p className ="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Thank you for choosing us for your collision repair needs. 
                         We're glad to have you as a customer and appreciate the confidence you placed in us. 
