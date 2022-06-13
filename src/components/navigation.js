@@ -13,7 +13,7 @@ const Navigation = ({navBackground}) => {
             `h-10 transform absolute top-2/3 sm:top-1/2
             -translate-y-1/3 transition-transform 
             duration-500 ease-in-out 
-            ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-1": "-translate-x-full" }` 
+            ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "mr-auto": "-translate-x-full" }` 
           }
           
           style={{zIndex: '900'}}
@@ -36,7 +36,7 @@ const Navigation = ({navBackground}) => {
               <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
             </p>
           </div>
-          <div className="col-span-1 col-end-5 py-5 relative ml-auto mr-3">
+          <div className="col-span-1 col-end-5 py-5 relative ml-auto mr-1">
             <button onClick={() => { setOpen(!open);  }} 
               className="absolute text-yellow-400 z-50 md:hidden hover:text-red-500  right-10"
               style={{zIndex: '1000'}}
