@@ -5,14 +5,12 @@ import { Link } from "gatsby"
 
 const Navigation = ({navBackground}) => {
     const [open, setOpen] = useState(false);
-    const isBrowser = typeof window !== "undefined"
-    if(isBrowser) var width = document;
 
     return (
       <div className={` bg-gray-900 w-full h-20 fixed z-10 transition duration-500 ease-in-out ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "bg-opacity-90": "bg-opacity-0" } `}>
         <Link className = 
           {
-            `h-10 transform absolute top-2/3 
+            `h-10 transform absolute top-2/3 sm:top-1/2
             -translate-y-1/3 transition-transform 
             duration-500 ease-in-out 
             ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-8": "-translate-x-full" }` 
