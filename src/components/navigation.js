@@ -7,7 +7,7 @@ const Navigation = ({navBackground}) => {
     const [open, setOpen] = useState(false);
 
     return (
-      <div className={` bg-gray-900 w-full h-20 fixed z-10 transition duration-500 ease-in-out ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "bg-opacity-90": "bg-opacity-0" } `}>
+      <div className={` bg-gray-900 w-full h-24 sm:h-20 fixed z-10 transition duration-500 ease-in-out ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "bg-opacity-90": "bg-opacity-0" } `}>
         <Link className = 
           {
             `h-10 transform absolute top-2/3 sm:top-1/2
@@ -16,7 +16,7 @@ const Navigation = ({navBackground}) => {
             ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-1": "-translate-x-full" }` 
           }
           
-          style={{zIndex: '1000'}}
+          style={{zIndex: '900'}}
           to="/"
         >
           <img className ="h-full w-full" src={logoSvg}></img>
@@ -36,9 +36,9 @@ const Navigation = ({navBackground}) => {
               <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
             </p>
           </div>
-          <div className="col-span-1 col-end-5 py-5 relative">
+          <div className="col-span-1 col-end-5 py-5 relative ml-auto mr-3">
             <button onClick={() => { setOpen(!open);  }} 
-              className="col-end-1 row-end-2 absolute text-yellow-400 z-50 md:hidden hover:text-red-500  right-10"
+              className="absolute text-yellow-400 z-50 md:hidden hover:text-red-500  right-10"
               style={{zIndex: '1000'}}
             >
               <div>
