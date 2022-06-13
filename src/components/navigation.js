@@ -13,7 +13,7 @@ const Navigation = ({navBackground}) => {
             `h-10 transform absolute top-2/3 sm:top-1/2
             -translate-y-1/3 transition-transform 
             duration-500 ease-in-out 
-            ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-8": "-translate-x-full" }` 
+            ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-1": "-translate-x-full" }` 
           }
           
           style={{zIndex: '1000'}}
