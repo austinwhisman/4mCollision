@@ -93,10 +93,10 @@ const Footer = () => {
                                     FAQ
                                 </li>
                             </Link>
-                            <Link to="/information">
+                            <Link to="/kia">
                                 <li className="hover:text-white text-yellow-300 table mx-auto cursor-pointer text-sm md:text-base lg:pt-4 
                                 ">
-                                    Information
+                                    Kia
                                 </li>
                             </Link>
                             <Link to="/goldclass">

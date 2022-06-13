@@ -58,12 +58,16 @@ const Header = ({ siteTitle }) => (
           COLLISION CENTER
           </Link>
         </h1>
-        <button className=" bg-yellow-300 before:bg-gray-800 w-full max-w-xs hvr-sweep-to-right font-bold mx-auto px-4 font-sans rounded text-black hover:text-yellow-300 py-6 mt-6">
+        <button className=" bg-yellow-300 before:bg-gray-800 w-full max-w-xs hvr-sweep-to-right font-bold mx-auto px-4 font-sans rounded text-red-700 hover:text-yellow-300 py-6 mt-6">
             <a href="tel:2485724844">
                 Click To Call: 248-572-4844
             </a>
-        </button> 
+        </button>
       </div>
+      <div className="text-2xl text-center text-white font-sans">
+        <p className="my-7">1663 N. Lapeer Rd. Oxford, MI</p>
+        <p><span>Hours: </span> Mon-Friday 8AM-5PM</p>
+      </div> 
     </div>
   </header>
 )

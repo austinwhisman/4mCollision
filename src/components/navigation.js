@@ -5,12 +5,14 @@ import { Link } from "gatsby"
 
 const Navigation = ({navBackground}) => {
     const [open, setOpen] = useState(false);
+    const isBrowser = typeof window !== "undefined"
+    if(isBrowser) var width = document;
 
     return (
       <div className={` bg-gray-900 w-full h-20 fixed z-10 transition duration-500 ease-in-out ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "bg-opacity-90": "bg-opacity-0" } `}>
         <Link className = 
           {
-            `h-10 transform absolute top-2/4 
+            `h-10 transform absolute top-2/3 
             -translate-y-1/3 transition-transform 
             duration-500 ease-in-out 
             ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "translate-x-8": "-translate-x-full" }` 
@@ -21,16 +23,31 @@ const Navigation = ({navBackground}) => {
         >
           <img className ="h-full w-full" src={logoSvg}></img>
         </Link>
-        <div className={`z-30 w-full absolute left-0 top-0 grid grid-cols-2 text-xs md:text-sm font-san
-                   ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}
+        <div className={`z-30 w-full absolute left-0 top-0 grid grid-cols-4 text-xs md:text-sm font-san
+                   
         `}
         >
-          <p className="mb-0 font-sans">
-            1663 N. Lapeer Rd. Oxford, MI
-          </p>
-          <p className=" mb-0 text-center font-sans">
-            <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
-          </p>
+          <div className={`col-span-4 grid grid-cols-4 ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}`}>
+            <p className="mb-0 font-sans col-span-2">
+              1663 N. Lapeer Rd. Oxford, MI
+            </p>
+            <p className="mb-0 font-sans text-center">
+              Mon-Fri 8-5
+            </p>
+            <p className=" mb-0 text-center font-sans">
+              <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
+            </p>
+          </div>
+          <div className="col-span-1 col-end-5 py-5 relative">
+            <button onClick={() => { setOpen(!open);  }} 
+              className="col-end-1 row-end-2 absolute text-yellow-400 z-50 md:hidden hover:text-red-500  right-10"
+              style={{zIndex: '1000'}}
+            >
+              <div>
+                <MenuIcon className="h-8 w-8"></MenuIcon>
+              </div>
+            </button>
+          </div>
         </div>
         <div className= { 
           `
@@ -98,28 +115,7 @@ const Navigation = ({navBackground}) => {
             </div>
           </div>
         </div>
-        <button onClick={() => { setOpen(!open);  }} 
-          className ={
-            open 
-            ? 
-              ` open text-yellow-400
-                top-6 right-4  
-                fixed z-50
-                md:hidden
-                hover:text-red-500`
-            :
-              ` text-yellow-400
-                top-6 right-4  
-                fixed z-30
-                md:hidden
-                hover:text-red-500`
-          }
-          style={{zIndex: '1000'}}
-        >
-          <div>
-            <MenuIcon className="h-8 w-8"></MenuIcon>
-          </div>
-        </button>
+       
       </div>
   );
 }

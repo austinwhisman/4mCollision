@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
 import Header from "./header"
 import Footer from "./footer"
+import Certificates from "./certificates"
 import LoadingScreen from "./loadingscreen"
 import "./layout.css"
 import { useElementOnScreen } from './scrolleffecthandler'
@@ -34,7 +35,7 @@ const Layout = ({ children }) => {
   }
   const [ containerRef, isVisible ] = useElementOnScreen({
       root: null,
-      rootMargin: "0px",
+      rootMargin: "200px",
       threshold: .1
   })
 
@@ -61,6 +62,7 @@ const Layout = ({ children }) => {
           <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <div ref={containerRef} style={{margin: `0 auto`}}>
             <main >{children}</main>
+            <Certificates/>
             <Footer/>
           </div>
         </div>
