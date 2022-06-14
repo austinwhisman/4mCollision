@@ -12,24 +12,26 @@ const KiaPage = () => (
     <Seo title="Gold Class" />
     
     <div className="grid grid-cols-1 lg:grid-cols-2 font-sans pt-16">
-        <div className ="w-11/12 lg:w-3/4 col-span-1 mx-auto">
-            <h1 className="text-yellow-300">Kia Certified</h1>
-            <p className ="text-white">
-                Getting back on the road after an accident first means dropping your 
-                Kia off at a local body shop. But do you know whether that auto body 
-                shop is certified or not? Since many automotive manufacturers have 
-                their own guidelines and parts for repairs, choosing the right auto 
-                body shop can change the entire experience for the better.
-            </p>
-            <p className ="text-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                That means that, when your Kia is damaged in a collision, 
-                you should go to a Kia Recognized Collision Repair Center 
-                like 4M Collision. Only then will you get the right 
-                parts and high-quality work.
-            </p>
-        </div>
-        <div className="relative md:pb-8 mx-auto">
-            <img className="w-full mb-0 md:w-3/4 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={kia2}></img>
+        <div className="mx-auto w-full lg:w-11/12 col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 lg:bg-white items-center justify-center border-none lg:mb-36 lg:rounded-3xl">
+            <div className ="w-11/12 lg:w-3/4 col-span-1 mx-auto py-4 font-semibold">
+                <h1 className="lg:text-red-800 text-yellow-300">Kia Certified</h1>
+                <p className ="text-white lg:text-black">
+                    Getting back on the road after an accident first means dropping your 
+                    Kia off at a local body shop. But do you know whether that auto body 
+                    shop is certified or not? Since many automotive manufacturers have 
+                    their own guidelines and parts for repairs, choosing the right auto 
+                    body shop can change the entire experience for the better.
+                </p>
+                <p className ="text-white lg:text-black lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                    That means that, when your Kia is damaged in a collision, 
+                    you should go to a Kia Recognized Collision Repair Center 
+                    like 4M Collision. Only then will you get the right 
+                    parts and high-quality work.
+                </p>
+            </div>
+            <div className="relative w-full h-full mx-auto">
+                <img className="w-full h-full mb-0 relative lazyload transition-opacity duration-1000 ease-in-out opacity-0 lg:rounded-r-3xl" src={kia2}></img>
+            </div>
         </div>
         <div className="mx-auto w-full col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2">
             <div className="relative w-full h-full object-cover">
@@ -65,7 +67,7 @@ const KiaPage = () => (
         <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2">
             <div className="w-full ml-auto relative lg:pt-16 mx-auto lg:border-8 lg:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                 <div className="relative w-11/12 mx-auto">
-                    <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
+                    <h1 className="mt-8 text-red-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
                     <p className ="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Thank you for choosing us for your collision repair needs. 
                         We're glad to have you as a customer and appreciate the confidence you placed in us. 
@@ -74,7 +76,7 @@ const KiaPage = () => (
                     </p>
                     <div className="w-3/4 max-w-xs mx-auto">
                         <button className="relative w-full bg-yellow-300 before:bg-gray-800 hvr-sweep-to-right font-bold px-4 font-sans rounded text-black hover:text-yellow-300 py-6 lazyload transition-opacity duration-1000 ease-in-out opacity-0 mb-12">
-                            <a href="tel:2485724844" className=" lazyload transition-opacity duration-1000 ease-in-out opacity-0 mx-auto">
+                            <a href="tel:2485724844" className=" lazyload transition-opacity duration-1000 ease-in-out opacity-0 mx-auto text-red-800" >
                                 Click To Call: 248-572-4844
                             </a>
                         </button> 
