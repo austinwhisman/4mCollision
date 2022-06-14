@@ -67,16 +67,16 @@ const KiaPage = () => (
         <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2">
             <div className="w-full ml-auto relative lg:pt-16 mx-auto lg:border-8 lg:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                 <div className="relative w-11/12 mx-auto">
-                    <h1 className="mt-8 text-red-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
-                    <p className ="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                    <h1 className="mt-8 text-gray-600 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
+                    <p className ="text-gray-800 font-medium lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Thank you for choosing us for your collision repair needs. 
                         We're glad to have you as a customer and appreciate the confidence you placed in us. 
                         If you have any questions, Please don't hesitate to call us.  
                         Our highly trained staff is here to serve you.
                     </p>
                     <div className="w-3/4 max-w-xs mx-auto">
-                        <button className="relative w-full bg-yellow-300 before:bg-gray-800 hvr-sweep-to-right font-bold px-4 font-sans rounded text-black hover:text-yellow-300 py-6 lazyload transition-opacity duration-1000 ease-in-out opacity-0 mb-12">
-                            <a href="tel:2485724844" className=" lazyload transition-opacity duration-1000 ease-in-out opacity-0 mx-auto text-red-800" >
+                        <button className="relative w-full bg-yellow-300 before:bg-gray-800 hvr-sweep-to-right font-bold px-4 font-sans rounded text-gray-800 hover:text-yellow-300 py-6 lazyload transition-opacity duration-1000 ease-in-out opacity-0 mb-12">
+                            <a href="tel:2485724844" className=" lazyload transition-opacity duration-1000 ease-in-out opacity-0 mx-auto" >
                                 Click To Call: 248-572-4844
                             </a>
                         </button> 
