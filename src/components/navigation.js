@@ -13,7 +13,7 @@ const Navigation = ({navBackground}) => {
                    
         `}
         >
-          <div className={`col-span-4 grid grid-cols-4 ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}`}>
+          <div className={`col-span-4 grid grid-cols-4 ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}`} style={{zIndex: '2001'}}>
             <p className="mb-0 font-sans col-span-2">
               1663 N. Lapeer Rd. Oxford, MI
             </p>
