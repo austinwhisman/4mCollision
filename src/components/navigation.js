@@ -8,20 +8,8 @@ const Navigation = ({navBackground}) => {
 
     return (
       <div className={` bg-gray-900 w-full h-24 sm:h-20 fixed z-10 transition duration-500 ease-in-out ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "bg-opacity-90": "bg-opacity-0" } `}>
-        <Link className = 
-          {
-            `h-10 transform absolute top-2/3 sm:top-1/2
-            -translate-y-1/3 transition-transform 
-            duration-500 ease-in-out 
-            ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "mr-auto": "-translate-x-full" }` 
-          }
-          
-          style={{zIndex: '900'}}
-          to="/"
-        >
-          <img className ="h-full w-full" src={logoSvg}></img>
-        </Link>
-        <div className={`z-30 w-full absolute left-0 top-0 grid grid-cols-4 text-xs md:text-sm font-san
+        
+        <div className={`w-full absolute left-0 top-0 grid grid-cols-4 text-xs md:text-sm font-san
                    
         `}
         >
@@ -36,10 +24,22 @@ const Navigation = ({navBackground}) => {
               <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
             </p>
           </div>
+          <div className = 
+              {
+                `h-10 transform
+                -translate-y-1/3 transition-transform 
+                duration-500 ease-in-out top-2/3 relative
+                ${(navBackground  && !open || open  && navBackground || open  && !navBackground) ? "mr-auto": "-translate-x-full" }`}
+                style={{zIndex: '2001'}}
+          >
+            <Link to="/">
+              <img className ="h-full w-full mb-0" src={logoSvg}></img>
+            </Link>
+          </div>
           <div className="col-span-1 col-end-5 py-5 relative ml-auto mr-1">
             <button onClick={() => { setOpen(!open);  }} 
               className="absolute text-yellow-400 z-50 md:hidden hover:text-red-500  right-10"
-              style={{zIndex: '1000'}}
+              style={{zIndex: '2002'}}
             >
               <div>
                 <MenuIcon className="h-8 w-8"></MenuIcon>
@@ -55,7 +55,7 @@ const Navigation = ({navBackground}) => {
           flex flex-wrap 
           bg-black bg-opacity-90
           text-center place-content-center
-          z-0
+          
           transition-transform duration-500 ease-in-out transform
           overflow-y-scroll
           md:overflow-y-visible
@@ -77,15 +77,15 @@ const Navigation = ({navBackground}) => {
           flex flex-wrap 
           bg-black bg-opacity-95
           text-center place-content-center
-          z-0
+          
           md:fixed
           md:transition-transform duration-500 
           md:ease-in-out 
           md:transform translate-x-0
           `
-        }>
+        } style={{zIndex: "2000"}}>
           <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 
-           text-5xl text-yellow-400 md:text-yellow-200 sm:text-sm md:text-lg">
+           text-5xl text-yellow-400 md:text-yellow-200 sm:text-sm md:text-lg" >
             <div className="w-3/4">
               <Link to="/contact">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Contact</p>
