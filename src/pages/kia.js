@@ -31,37 +31,39 @@ const KiaPage = () => (
         <div className="relative md:pb-8 mx-auto">
             <img className="w-full mb-0 md:w-3/4 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={kia2}></img>
         </div>
-        <div className="">
-            <img className="w-full mb-0 md:w-3/4 relative mx-auto lazyload transition-opacity duration-1000 ease-in-out opacity-0" style={{maxHeight: "500px"}} src={kia3}></img>
-        </div>
-        <div class="w-full lg:w-3/4 relative pt-16 text-white bg-black mx-auto ">
-            <div>
-                <h1 className="text-yellow-300 text-center lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                    Benifits Of Kia Certified
-                </h1>
-                    <p className="p-2 bg-gray-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Kia Genuine Parts – we will only use Kia parts that come from the 
-                        Original Equipment Manufacturer (OEM)
-                    </p>
-                    <p className=" p-2 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Commitment to repair your Kia to factory specifications with our 
-                        rigorous workmanship standards – guaranteed to be returned to pre-accident 
-                        appearance, function and performance
-                    </p>
-                    <p className="p-2 bg-gray-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Requirement to have the latest Kia tools, equipment and technology to repair
-                        your vehicle properly
-                    </p>
-                    <p className="p-2 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Kia Specific Training – our well trained, expert staff participate in ongoing 
-                        training and education from I-CAR, an industry training standard, and complete 
-                        supplemental advanced training specific to Kia vehicles. This ensures that they 
-                        are up to date on proper repair techniques and all the newest Kia technology
-                    </p>
+        <div className="mx-auto w-full col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2">
+            <div className="relative w-full h-full object-cover">
+                <img className="w-full h-full mb-0 object-cover relative lazyload transition-opacity duration-1000 ease-in-out opacity-0 ml-auto" style={{maxHeight: "630px"}} src={kia3}></img>
+            </div>
+            <div class="w-full relative pt-16 text-white bg-black mr-auto">
+                <div>
+                    <h1 className="text-yellow-300 text-center lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                        Benifits Of Kia Certified
+                    </h1>
+                        <p className="p-2 bg-gray-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                            Kia Genuine Parts – we will only use Kia parts that come from the 
+                            Original Equipment Manufacturer (OEM)
+                        </p>
+                        <p className=" p-2 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                            Commitment to repair your Kia to factory specifications with our 
+                            rigorous workmanship standards – guaranteed to be returned to pre-accident 
+                            appearance, function and performance
+                        </p>
+                        <p className="p-2 bg-gray-800 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                            Requirement to have the latest Kia tools, equipment and technology to repair
+                            your vehicle properly
+                        </p>
+                        <p className="p-2 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                            Kia Specific Training – our well trained, expert staff participate in ongoing 
+                            training and education from I-CAR, an industry training standard, and complete 
+                            supplemental advanced training specific to Kia vehicles. This ensures that they 
+                            are up to date on proper repair techniques and all the newest Kia technology
+                        </p>
+                </div>
             </div>
         </div>
-        <div className="col-span-1 lg:col-span-2 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 lg:mb-36">
-            <div className="w-full lg:w-3/4 relative lg:pt-16 mx-auto lg:border-8 lg:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+        <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2">
+            <div className="w-full ml-auto relative lg:pt-16 mx-auto lg:border-8 lg:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                 <div className="relative w-11/12 mx-auto">
                     <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0">Lets Connect</h1>
                     <p className ="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
@@ -79,8 +81,8 @@ const KiaPage = () => (
                     </div>
                 </div>
             </div>
-            <div className="order-first lg:order-last my-0 ">
-                <img className="w-full mb-0 md:w-3/4 relative mx-auto" style={{maxHeight: "500px"}} src={kia1}></img>
+            <div className="order-first lg:order-last my-0 mr-auto">
+                <img className="h-full w-full objcet-cover mb-0 relative mx-auto" src={kia1}></img>
             </div>
         </div>
     </div>

@@ -46,7 +46,16 @@ const GoldClassPage = () => (
         </div>
       </div>
       <div className="relative order-first lg:order-last pb-8">
-        <img className=" w-1/2 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={goldClass}></img>
+        <div className=" w-1/2 relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lazyload transition-opacity duration-1000 ease-in-out opacity-0 ">
+        <img  src={goldClass}></img>
+          <div className="mx-auto w-max relative">
+            <a href="https://info.i-car.com/about-us" target="_blank">
+              <button  className="hvr-sweep-to-right font-bold py-2 px-4 rounded text-gray-800 hover:bg-white hover:text-yellow-300 ">
+                Click To Visit
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>
