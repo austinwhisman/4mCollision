@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
         transform: 'translate(-50%, 0)'
       }}
     />
-    <div className="absolute transform -translate-y-2/4 -translate-x-2/4 top-1/2 left-1/2 z-10 w-11/12">
+    <div itemScope itemType="https://schema.org/LocalBusiness" className="absolute transform -translate-y-2/4 -translate-x-2/4 top-1/2 left-1/2 z-10 w-11/12">
       <div className="relative w-full grid grid-cols-1">
         <div
           className="bg-contain w-56 h-20 sm:w-96 sm:h-32 z-10 bg-no-repeat"
@@ -59,14 +59,14 @@ const Header = ({ siteTitle }) => (
           </Link>
         </h1>
         <button className=" bg-yellow-300 before:bg-gray-800 w-full max-w-xs hvr-sweep-to-right font-bold mx-auto px-4 font-sans rounded text-red-700 hover:text-yellow-300 py-6 mt-6">
-            <a href="tel:2485724844">
+            <a itemProp="telephone" href="tel:2485724844">
                 Click To Call: 248-572-4844
             </a>
         </button>
       </div>
-      <div className="text-2xl text-center text-white font-sans">
-        <p className="my-7">1663 N. Lapeer Rd. Oxford, MI</p>
-        <p><span>Hours: </span> Mon-Friday 8AM-5PM</p>
+      <div itemScope itemType="https://schema.org/LocalBusiness" className="text-2xl text-center text-white font-sans">
+        <p itemProp="address" className="my-7">1663 N. Lapeer Rd. Oxford, MI</p>
+        <p><span itemProp="openingHours">Hours: </span> Mon-Friday 8AM-5PM</p>
       </div> 
     </div>
   </header>

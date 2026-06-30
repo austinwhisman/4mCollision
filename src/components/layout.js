@@ -13,6 +13,7 @@ import Header from "./header"
 import Footer from "./footer"
 import Certificates from "./certificates"
 import LoadingScreen from "./loadingscreen"
+import TestimonialContainer from "./testimonialcontainer"
 import "./layout.css"
 import { useElementOnScreen } from './scrolleffecthandler'
 import { useLazyLoadImage } from './lazyloadscrolleffecthandler'

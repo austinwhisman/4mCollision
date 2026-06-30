@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import goldClass from "../images/goldclass.png"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -26,7 +25,7 @@ const GoldClassPage = () => (
         </p>
         <div className="w-full relative pt-1 lg:pt-16 mx-auto sm:border-8 sm:border-yellow-300 bg-white lazyload transition-opacity duration-1000 ease-in-out opacity-0">
             <div className="relative w-11/12 mx-auto">
-                <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
+                <h1 className="mt-8 lazyload transition-opacity duration-1000 ease-in-out opacity-0 underline underline-offset-8">
                   Lets Connect
                 </h1>
                 <p className ="lazyload transition-opacity duration-1000 ease-in-out opacity-0">

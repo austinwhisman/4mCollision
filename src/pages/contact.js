@@ -1,7 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import goldClass from "../images/goldclass.png"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactLayout from "../components/conactlayout"
 
@@ -9,7 +6,7 @@ const ContactPage = () => (
 <ContactLayout>
     <Seo title="4mCollision Contact Page" />
     <div className="h-screen relative">
-        <div  className="grid grid-cols-2 relative top-1/2 transform -translate-y-1/2">
+        <div  className="grid grid-cols-2 relative">
             <div className="col-span-2 row-start-2 lg:col-span-1 lg:row-start-1">
                 <form className="relative w-4/5 max-w-2xl mx-auto xl:ml-8 mb-0 font-sans">
                     <h3 className="text-yellow-300 ml-4">CONTACT</h3>
@@ -85,7 +82,8 @@ const ContactPage = () => (
                     <a href="tel:2485724844">
                         Click To Call: 248-572-4844
                     </a>
-                </button> 
+                </button>
+                 
             </div>  
         </div>
     </div>

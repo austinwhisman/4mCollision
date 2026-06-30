@@ -13,13 +13,13 @@ const ServicesPage = () => (
   <Layout>
     <Seo title="Provided Collison Repair Services" />
     <div>
-        <div className="w-11/12  mx-auto text-white font-sans">
+        <div className="w-11/12 mx-auto text-white font-sans">
             <div className="mb-14">
-                <h1 className="text-yellow-300 text-center">REPAIR SERVICES</h1>
+                <h1 className="text-yellow-300 text-center underline">REPAIR SERVICES</h1>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={paintRepairImage}></img>
+                    <img alt="collision paint repair" className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={paintRepairImage}></img>
                     <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Body Paint Repair
                     </h3>
@@ -29,7 +29,7 @@ const ServicesPage = () => (
                     </p>
                 </div>     
                 <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={bodyRepairImage}></img>
+                    <img alt="collision body repair" className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={bodyRepairImage}></img>
                     <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Auto Body Repair
                     </h3>
@@ -39,7 +39,7 @@ const ServicesPage = () => (
                     </p>
                 </div>     
                 <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="w-full h-96 sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" style={{backgroundImage: `url(${bumperRepairImage})`, backgroundSize: `cover`}}></img>
+                    <img alt="collision bumper repair" className="w-full h-96 sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" style={{backgroundImage: `url(${bumperRepairImage})`, backgroundSize: `cover`}}></img>
                     <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Bumper Repair
                     </h3>
@@ -49,7 +49,7 @@ const ServicesPage = () => (
                     </p>
                 </div>     
                 <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={autoRepairImage}></img>
+                    <img alt="collision auto repair" className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={autoRepairImage}></img>
                     <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         Fender Repair
                     </h3>
@@ -57,27 +57,7 @@ const ServicesPage = () => (
                         Local fender repair experts. Full-Service Repairs for all types of fender damage. 
                         Give us a call today.
                     </p>
-                </div>     
-                <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={hailRepairImage}></img>
-                    <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Hail Damage Repair
-                    </h3>
-                    <p className="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        We perform hail damage repair and paintless dent removal in South Jersey. 
-                        No matter what damage hail may have done to your car.
-                    </p>
-                </div>     
-                <div className="w-11/12 mx-auto sm:max-w-sm">
-                    <img className="sm:h-80 sm:w-80 object-cover lazyload transition-opacity duration-1000 ease-in-out opacity-0" src={dentRepairImage}></img>
-                    <h3 className="text-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Paintless Dent Repair
-                    </h3>
-                    <p className="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
-                        Paintless dent removal is the fastest, most effective, and cost-effective method 
-                        of removing minor dents and creases from your vehicle.
-                    </p>
-                </div>
+                </div> 
                 <div className="relative col-span-1  w-11/12 mx-auto xl:max-w-sm sm:h-4/6 py-10 p-1 2xl:p-10 bg-white text-black  border-yellow-300 lazyload transition-opacity duration-1000 ease-in-out opacity-0 mb-8 lg:mb-0" style={{border: `20px solid rgb(252, 211, 77)`}}>
                     <p className="lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                         If you're uncertain that we provide a service you're looking for, please reach out to us. 

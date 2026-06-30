@@ -5,7 +5,7 @@ import kia3 from "../images/kia-3.jpg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const KiaPage = () => (
+const PpgPage = () => (
   <Layout>
     <Seo title="Gold Class" />
     
@@ -14,11 +14,10 @@ const KiaPage = () => (
             <div className ="w-11/12 lg:w-3/4 col-span-1 mx-auto py-4 font-semibold">
                 <h1 className="lg:text-red-800 text-yellow-300 underline underline-offset-8">Kia Certified</h1>
                 <p className ="text-white lg:text-black">
-                    Getting back on the road after an accident first means dropping your 
-                    Kia off at a local body shop. But do you know whether that auto body 
-                    shop is certified or not? Since many automotive manufacturers have 
-                    their own guidelines and parts for repairs, choosing the right auto 
-                    body shop can change the entire experience for the better.
+                    PPG works every day to devlop and deliver the paints, coatings, 
+                    and materials trusted by customers for more than 135 years.
+                    Through dedication and creativity, they provide the best product 
+                    for us to get your car to match with it's original paint.
                 </p>
                 <p className ="text-white lg:text-black lazyload transition-opacity duration-1000 ease-in-out opacity-0">
                     That means that, when your Kia is damaged in a collision, 
@@ -102,4 +101,4 @@ const KiaPage = () => (
   </Layout>
 )
 
-export default KiaPage
+export default PpgPage

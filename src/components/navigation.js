@@ -13,15 +13,15 @@ const Navigation = ({navBackground}) => {
                    
         `}
         >
-          <div className={`col-span-4 grid grid-cols-4 ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}`} style={{zIndex: '2001'}}>
-            <p className="mb-0 font-sans col-span-2">
+          <div itemScope itemType="https://schema.org/LocalBusiness" className={`font-bold col-span-4 grid grid-cols-4 sm:grid-cols-3 ${(open && navBackground || navBackground && !open || open && !navBackground) ? "bg-yellow-300 text-black": "text-white"}`} style={{zIndex: '2001'}}>
+            <p itemProp="address" className="mb-0 font-sans col-span-2 sm:col-span-1">
               1663 N. Lapeer Rd. Oxford, MI
             </p>
-            <p className="mb-0 font-sans text-center">
+            <p itemProp="openingHours" className="mb-0 font-sans text-center">
               Mon-Fri 8-5
             </p>
             <p className=" mb-0 text-center font-sans">
-              <span> Call:</span> <a href="tel:2485724844">248-572-4844</a>
+              <span> Call:</span> <a itemProp="telephone" href="tel:2485724844">248-572-4844</a>
             </p>
           </div>
           <div className = 
@@ -87,16 +87,13 @@ const Navigation = ({navBackground}) => {
           <div className="z-30 md:h-auto md:flex text-left right-0 md:w-3/4 
            text-5xl text-yellow-400 md:text-yellow-200 sm:text-sm md:text-lg" >
             <div className="w-3/4">
-              <Link to="/contact">
-                <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Contact</p>
-              </Link>
             </div>
             <div className="w-1/2">
               <Link to="/faq">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">FAQ</p>
               </Link>
             </div>
-            <div className="w-3/4">
+            <div className="w-1/2">
               <Link to="/services">
                 <p className="mt-4 table md:mb-0 hover:text-red-500 md:hover:text-white cursor-pointer">Services</p>
               </Link>
